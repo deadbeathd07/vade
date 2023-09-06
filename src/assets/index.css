@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+.vade-h1 {
+  font-size: 6.937rem;
+}
+
+.vade-h2 {
+  font-size: 6rem;
+}
+
+.vade-h3 {
+  font-size: 2.75rem;
+}
+
+.vade-h4 {
+  font-size: 1.125rem;
+}
+
+.vade-quote-text {
+  font-size: 2rem;
+}
+
+.vade-form-text {
+  font-size: 1.5rem;
+}
+
+.vade-alert-text {
+  font-size: 1rem;
+}
+
+.vade-base-text {
+  font-size: 0.937rem;
+}
+
+.vade-info-text {
+  font-size: 0.75rem;
+}
