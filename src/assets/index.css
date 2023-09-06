@@ -36,3 +36,39 @@
 .vade-info-text {
   font-size: 0.75rem;
 }
+
+.vade-lh-18 {
+  line-height: 1.125rem;
+}
+
+.vade-lh-21 {
+  line-height: 1.312rem;
+}
+
+.vade-lh-22 {
+  line-height: 1.375rem;
+}
+
+.vade-lh-24 {
+  line-height: 1.5rem;
+}
+
+.vade-lh-28 {
+  line-height: 1.75rem;
+}
+
+.vade-lh-46 {
+  line-height: 2.875rem;
+}
+
+.vade-lh-50 {
+  line-height: 3.125rem;
+}
+
+.vade-lh-101 {
+  line-height: 6.312rem;
+}
+
+.vade-lh-115 {
+  line-height: 7.187rem;
+}
