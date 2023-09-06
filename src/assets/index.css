@@ -72,3 +72,31 @@
 .vade-lh-115 {
   line-height: 7.187rem;
 }
+
+.vade-ls-32 {
+  letter-spacing: 0.32px;
+}
+
+.vade-ls-45 {
+  letter-spacing: 0.45px;
+}
+
+.vade-ls-90 {
+  letter-spacing: 0.9px;
+}
+
+.vade-ls-132 {
+  letter-spacing: 1.32px;
+}
+
+.vade-ls-180 {
+  letter-spacing: 1.8px;
+}
+
+.vade-ls-384 {
+  letter-spacing: 3.84px;
+}
+
+.vade-ls-696 {
+  letter-spacing: 6.96px;
+}
