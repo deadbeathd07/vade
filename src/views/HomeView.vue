@@ -25,19 +25,24 @@
 	padding-top: 108px;
 }
 
+.pb-25 {
+	padding-bottom: 100px;
+}
+
 .mb-30 {
 	margin-bottom: 120px;
 }
 
-.pb-25 {
-	padding-bottom: 100px;
+.py-20 {
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .bg-img-1 {
 	background-image: url('../assets/bg-1.png') !important;
 	background-position: center !important;
 	background-size: cover !important;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat !important;
 }
 
 .text-transform-none {

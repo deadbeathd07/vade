@@ -1,5 +1,5 @@
 <template>
-	<v-list class="d-flex opacity-40" :base-color="color">
+	<v-list class="d-flex opacity-40 bg-transparent" :base-color="color">
 		<v-list-item
 			v-for="(value, name, index) in props.nav"
 			:key="index"
