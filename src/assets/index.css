@@ -1,6 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
+:root {
+  --palette-1-1: #393737;
+  --palette-1-2: #70748c;
+  --palette-1-3: #ffea31;
+  --palette-1-4: #5d6073;
+  --palette-1-5: #4e66ff;
+  --palette-1-6: #ffffff;
+  --palette-1-7: #f0f8ff;
+  --palette-1-8: #b5b7c7;
+  --palette-1-9: #ddebff;
+  --palette-1-10: #f9fbfd;
+  --palette-1-11: transparent;
+
+  --primary-bg: var(--palette-1-10);
+  --secondary-bg: var(--palette-1-7);
+  --original-bg: var(--palette-1-9);
+
+  --primary-nav-text: var(--palette-1-1);
+
+  --primary-title: var(--palette-1-1);
+  --original-title: var(--palette-1-5);
+
+  --primary-text: var(--palette-1-2);
+  --secondary-text: var(--palette-1-1);
+  --info-text: var(--palette-1-8);
+  --original-text: var(--palette-1-5);
+  --notification-text: var(--palette-1-5);
+
+  --primary-btn-bg: var(--palette-1-11);
+  --secondary-btn-bg: var(--palette-1-1);
+  --original-btn-bg-1: var(--palette-1-3);
+  --original-btn-bg-2: var(--palette-1-5);
+
+  --primary-btn-text: var(--palette-1-4);
+  --secondary-btn-text: var(--palette-1-6);
+  --original-btn-text-1: var(--palette-1-1);
+  --original-btn-text-2: var(--palette-1-5);
+
+  --primary-btn-border: var(--palette-1-2);
+  --original-btn-border: var(--palette-1-1);
+
+
+}
+
 .vade-h1 {
   font-size: 6.937rem;
 }
@@ -100,3 +144,7 @@
 .vade-ls-696 {
   letter-spacing: 6.96px;
 }
+
+.max-width {
+  width: 1272px;
+} 
