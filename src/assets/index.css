@@ -74,7 +74,7 @@
 }
 
 .vade-base-text {
-  font-size: 0.937rem;
+  font-size: 0.937rem !important;
 }
 
 .vade-info-text {
@@ -145,8 +145,8 @@
   letter-spacing: 6.96px;
 }
 
-.max-width {
-  width: 1272px;
+.vade-max-width {
+	max-width: 1272px;
 }
 
 .original-btn-border {
