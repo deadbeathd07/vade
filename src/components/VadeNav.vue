@@ -6,16 +6,17 @@
 			class="mr-11"
 			@click="goLink(value)"
 		>
-			<v-list-item-title v-text="name" class="vade-base-text" />
+			<v-list-item-title v-text="name" class="vade-base-text vade-lh-24" />
 		</v-list-item>
 		<v-list-item>
 			<v-btn
 				size="large"
 				variant="outlined"
-				class="text-lowercase vade-base-text"
+				class="text-lowercase vade-base-text vade-lh-24"
 				:color="color"
-				>book a demo</v-btn
 			>
+				book a demo
+			</v-btn>
 		</v-list-item>
 	</v-list>
 </template>
