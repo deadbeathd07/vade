@@ -94,7 +94,7 @@
 }
 
 .vade-lh-24 {
-  line-height: 1.5rem;
+  line-height: 1.5rem !important;
 }
 
 .vade-lh-28 {
@@ -142,7 +142,7 @@
 }
 
 .vade-ls-696 {
-  letter-spacing: 6.96px;
+  letter-spacing: 6.96px !important;
 }
 
 .vade-max-width {
