@@ -2,7 +2,7 @@
 	<v-app-bar
 		:elevation="0"
 		scroll-behavior="hide"
-		class="mt-10 vade-max-width"
+		class="vade-max-width pt-10"
 		color="transparent"
 		absolute
 	>
