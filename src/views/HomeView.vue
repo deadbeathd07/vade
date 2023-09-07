@@ -3,7 +3,7 @@
 		<h1 class="vade-h1 text-regular vade-lh-115 vade-ls-696 mb-30">
 			Connecting the curb to new insights
 		</h1>
-		<p class="max-width-365 mb-9">
+		<p class="max-width-365 mb-9 primary-text vade-base-text vade-lh-24">
 			Real-time curb data for smart cities. Measure occupancy, analyze demand,
 			and manage curb space with the right tools.
 		</p>
