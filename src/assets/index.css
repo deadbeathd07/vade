@@ -232,3 +232,7 @@
 .original-bg {
   background-color: var(--original-bg);
 }
+
+.opacity-40 {
+  opacity: 0.4;
+}
