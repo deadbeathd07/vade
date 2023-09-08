@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
+
 :root {
   --palette-1-1: #393737;
   --palette-1-2: #70748c;
@@ -147,6 +148,10 @@
 
 .vade-max-width {
 	max-width: 1272px;
+}
+
+.vade-bg-primary {
+ background-color: var(--primary-bg) !important; 
 }
 
 .original-btn-border {
