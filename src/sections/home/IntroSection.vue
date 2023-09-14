@@ -1,25 +1,44 @@
 <template>
-	<v-sheet class="bg-img-1">
-		<h1 class="vade-h1 text-regular vade-lh-115 vade-ls-696 mb-30">
-			Connecting the curb to new insights
+	<v-sheet class="bg-img-1 vade-pt-31 vade-pb-25">
+		<h1 class="vade-h1 text-regular vade-lh-115 vade-ls-696 vade-mb-30">
+			{{ sectionContent.title }}
 		</h1>
-		<p class="max-width-365 primary-text vade-base-text vade-lh-24">
-			Real-time curb data for smart cities. Measure occupancy, analyze demand,
-			and manage curb space with the right tools.
+		<p class="max-width-365 primary-text vade-base-text vade-lh-24 vade-mb-9">
+			{{ sectionContent.text }}
 		</p>
 		<v-btn
-			size="large"
-			class="vade-base-text vade-lh-24 text-transform-none"
+			width="188"
+			height="68"
+			class="vade-base-text vade-lh-24 text-transform-none vade-ls-45"
 			color="yellow"
 			elevation="0"
 		>
-			Book a demo
+			{{ sectionContent.btn_text }}
 		</v-btn>
 	</v-sheet>
 </template>
 
-<script>
-export default {};
+<script setup>
+import { useStore } from 'vuex';
+
+const store = useStore();
+const sectionContent = store.state.sections.intro;
 </script>
 
-<style></style>
+<style>
+.vade-pt-31 {
+	padding-top: 124px;
+}
+
+.vade-pb-25 {
+	padding-bottom: 100px;
+}
+
+.vade-mb-9 {
+	margin-bottom: 36px;
+}
+
+.vade-mb-30 {
+	margin-bottom: 120px;
+}
+</style>
