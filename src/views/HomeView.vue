@@ -45,28 +45,88 @@
 			</v-card>
 		</v-sheet>
 	</v-sheet>
+	<v-sheet>
+		<h2>Collect, analyze, and visualize occupancy data</h2>
+		<p>Visualize demand with dashboards for curb utilization and compliance.</p>
+		<v-img src="assets/app.png" />
+	</v-sheet>
+	<v-sheet>
+		<h2>Trusted by leaders in urban transportation</h2>
+		<p>
+			Transparency and quality are the basis of our work, and we've helped
+			cities and vendors across the United States.
+		</p>
+		<h6>Here's who we've worked with</h6>
+		<v-list color="transparent" class="d-flex flex-wrap">
+			<v-list-item v-for="(company, i) in companies" :key="i">
+				<template v-slot:prepend>
+					<component :is="company.icon" />
+				</template>
+			</v-list-item>
+		</v-list>
+		<blockquote>
+			Curb management can help ensure that curb space is allocated more
+			equitably, providing access to this limited resource to all street users,
+			including our most vulnerable.”
+		</blockquote>
+	</v-sheet>
 </template>
 
 <script setup>
 import SolarBatteryIcon from '../components/icons/SolarBatteryIcon.vue';
 import DatabaseIcon from '../components/icons/DatabaseIcon.vue';
 import ChartIcon from '../components/icons/ChartIcon.vue';
+import CompanyLogo1 from '../components/icons/companies_logo/CompanyLogo1.vue';
+import CompanyLogo2 from '../components/icons/companies_logo/CompanyLogo2.vue';
+import CompanyLogo3 from '../components/icons/companies_logo/CompanyLogo3.vue';
+import CompanyLogo4 from '../components/icons/companies_logo/CompanyLogo4.vue';
+import CompanyLogo5 from '../components/icons/companies_logo/CompanyLogo5.vue';
+import CompanyLogo6 from '../components/icons/companies_logo/CompanyLogo6.vue';
+import CompanyLogo7 from '../components/icons/companies_logo/CompanyLogo7.vue';
+import CompanyLogo8 from '../components/icons/companies_logo/CompanyLogo8.vue';
 
 const options = [
 	{
-		img: SolarBatteryIcon,
+		icon: SolarBatteryIcon,
 		title: 'Fully wireless hardware',
 		text: 'We provide solar and cellular cameras that work anywhere, operate 24/7, and take under 10 minutes to install.',
 	},
 	{
-		img: DatabaseIcon,
+		icon: DatabaseIcon,
 		title: 'Real-time data',
 		text: 'Measure availability and compliance in real-time with our powerful and accurate computer vision pipeline.',
 	},
 	{
-		img: ChartIcon,
+		icon: ChartIcon,
 		title: 'Full service subscription',
 		text: 'Full service subscription. One subscription for the cameras, installation, maintenance, implementation, software, and support.',
+	},
+];
+
+const companies = [
+	{
+		icon: CompanyLogo1,
+	},
+	{
+		icon: CompanyLogo2,
+	},
+	{
+		icon: CompanyLogo3,
+	},
+	{
+		icon: CompanyLogo4,
+	},
+	{
+		icon: CompanyLogo5,
+	},
+	{
+		icon: CompanyLogo6,
+	},
+	{
+		icon: CompanyLogo7,
+	},
+	{
+		icon: CompanyLogo8,
 	},
 ];
 </script>
