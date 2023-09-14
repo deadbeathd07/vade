@@ -1,15 +1,22 @@
 <template>
-	<v-sheet class="vade-bg-primary bg-img-camera">
-		<h2>Get to know the curb better</h2>
-		<p class="max-width-45">
+	<v-sheet
+		class="vade-bg-primary bg-img-camera vade-pt-39 vade-px-26 vade-pb-24"
+	>
+		<h3
+			class="primary-title vade-h3 vade-lh-50 vade-ls-132 font-weight-regular vade-max-width-450 pb-6"
+		>
+			Get to know the curb better
+		</h3>
+		<p class="primary-text vade-base-text vade-lh-24 max-width-450 vade-pb-14">
 			Vade replaces legacy parking infrastructure with wireless cameras,
 			computer vision, and granular analytics. We make it easy for cities to
 			monitor and manage curb space in real-time.
 		</p>
 		<v-btn
 			variant="outlined"
-			class="vade-base-text vade-lh-24 text-transform-none"
-			size="large"
+			class="vade-base-text vade-lh-18 vade-ls-45 text-transform-none primary-btn-text primary-btn-border"
+			width="270"
+			height="60"
 		>
 			More about our technology
 		</v-btn>
@@ -30,8 +37,27 @@
 	</v-sheet>
 </template>
 
-<script>
-export default {};
-</script>
+<script setup></script>
 
-<style></style>
+<style>
+.vade-pt-39 {
+	padding-top: 156px;
+}
+
+.vade-pb-14 {
+	padding-bottom: 56px;
+}
+
+.vade-pb-24 {
+	padding-bottom: 96px;
+}
+
+.vade-px-26 {
+	padding-right: 104px;
+	padding-left: 104px;
+}
+
+.vade-max-width-450 {
+	max-width: 450px;
+}
+</style>
