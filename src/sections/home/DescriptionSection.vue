@@ -5,20 +5,17 @@
 		<h3
 			class="primary-title vade-h3 vade-lh-50 vade-ls-132 font-weight-regular vade-max-width-450 pb-6"
 		>
-			Get to know the curb better
+			{{ sectionContent.title }}
 		</h3>
 		<p class="primary-text vade-base-text vade-lh-24 max-width-450 vade-pb-14">
-			Vade replaces legacy parking infrastructure with wireless cameras,
-			computer vision, and granular analytics. We make it easy for cities to
-			monitor and manage curb space in real-time.
+			{{ sectionContent.text }}
 		</p>
 		<v-btn
 			variant="outlined"
 			class="vade-base-text vade-lh-18 vade-ls-45 text-transform-none primary-btn-text primary-btn-border"
 			width="270"
 			height="60"
-		>
-			More about our technology
+			>{{ sectionContent.btn_text }}
 		</v-btn>
 		<v-sheet color="transparent" class="d-flex">
 			<v-card
@@ -37,7 +34,13 @@
 	</v-sheet>
 </template>
 
-<script setup></script>
+<script setup>
+import { useStore } from 'vuex';
+
+const store = useStore();
+
+const sectionContent = store.state.sections.description;
+</script>
 
 <style>
 .vade-pt-39 {
