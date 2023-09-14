@@ -7,7 +7,7 @@ import { RouterView } from 'vue-router';
 <template>
 	<v-app class="vade-max-width mx-auto pb-8 px-4">
 		<vade-header />
-		<v-main>
+		<v-main class="pa-0">
 			<router-view />
 		</v-main>
 		<vade-footer />
