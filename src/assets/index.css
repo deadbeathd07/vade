@@ -123,7 +123,7 @@
 }
 
 .vade-ls-45 {
-  letter-spacing: 0.45px;
+  letter-spacing: 0.45px !important;
 }
 
 .vade-ls-90 {
