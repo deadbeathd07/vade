@@ -10,12 +10,11 @@
 			<img src="../assets/logo-1.svg" alt="logo" />
 		</template>
 		<template v-slot:append>
-			<vade-nav :nav="nav" :color="palette['primary-nav-text']" />
+			<vade-nav :nav="nav" :is-horizontal="true" />
 			<v-btn
 				size="large"
 				variant="outlined"
-				class="text-lowercase vade-base-text vade-lh-24 opacity-40"
-				:color="color"
+				class="text-lowercase vade-base-text vade-lh-24 vade-ls-90 opacity-40"
 			>
 				book a demo
 			</v-btn>
@@ -30,8 +29,6 @@ import VadeNav from './VadeNav.vue';
 const store = useStore();
 
 const nav = store.state.nav;
-
-const palette = store.state.palette;
 </script>
 
 <style></style>
