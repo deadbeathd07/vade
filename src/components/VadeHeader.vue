@@ -29,13 +29,7 @@ import VadeNav from './VadeNav.vue';
 
 const store = useStore();
 
-const nav = {
-	technology: '/technology',
-	'about us': '/about-us',
-	impact: '/impact',
-	portfolio: '/portfolio',
-	blog: '/blog',
-};
+const nav = store.state.nav;
 
 const palette = store.state.palette;
 </script>
