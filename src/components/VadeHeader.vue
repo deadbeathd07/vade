@@ -2,7 +2,7 @@
 	<v-app-bar
 		:elevation="0"
 		scroll-behavior="hide"
-		class="vade-max-width pt-10"
+		class="vade vade-max-width pt-10"
 		color="transparent"
 		absolute
 	>
@@ -12,7 +12,7 @@
 		<template v-slot:append>
 			<vade-nav :nav="nav" :is-horizontal="true" />
 			<v-btn
-				size="large"
+				width="127"
 				variant="outlined"
 				class="text-lowercase vade-base-text vade-lh-24 vade-ls-90 opacity-40"
 			>
@@ -31,4 +31,12 @@ const store = useStore();
 const nav = store.state.nav;
 </script>
 
-<style></style>
+<style>
+.vade .v-toolbar__prepend {
+	margin-inline-start: 0 !important;
+}
+
+.vade .v-toolbar__append {
+	margin-inline-end: 0 !important;
+}
+</style>
