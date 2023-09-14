@@ -1,75 +1,11 @@
 <template>
-	<v-sheet class="bg-img-1">
-		<h1 class="vade-h1 text-regular vade-lh-115 vade-ls-696 mb-30">
-			Connecting the curb to new insights
-		</h1>
-		<p class="max-width-365 primary-text vade-base-text vade-lh-24">
-			Real-time curb data for smart cities. Measure occupancy, analyze demand,
-			and manage curb space with the right tools.
-		</p>
-		<v-btn
-			size="large"
-			class="vade-base-text vade-lh-24 text-transform-none"
-			color="yellow"
-			elevation="0"
-		>
-			Book a demo
-		</v-btn>
-	</v-sheet>
-	<v-sheet class="vade-bg-primary bg-img-camera">
-		<h2>Get to know the curb better</h2>
-		<p class="max-width-45">
-			Vade replaces legacy parking infrastructure with wireless cameras,
-			computer vision, and granular analytics. We make it easy for cities to
-			monitor and manage curb space in real-time.
-		</p>
-		<v-btn
-			variant="outlined"
-			class="vade-base-text vade-lh-24 text-transform-none"
-			size="large"
-		>
-			More about our technology
-		</v-btn>
-		<v-sheet color="transparent" class="d-flex">
-			<v-card
-				v-for="(option, index) in options"
-				:key="index"
-				:title="option.title"
-				:text="option.text"
-				elevation="0"
-				color="transparent"
-			>
-				<template v-slot:prepend>
-					<component :is="option.img" />
-				</template>
-			</v-card>
-		</v-sheet>
-	</v-sheet>
-	<v-sheet>
-		<h2>Collect, analyze, and visualize occupancy data</h2>
-		<p>Visualize demand with dashboards for curb utilization and compliance.</p>
-		<v-img src="assets/app.png" />
-	</v-sheet>
-	<v-sheet>
-		<h2>Trusted by leaders in urban transportation</h2>
-		<p>
-			Transparency and quality are the basis of our work, and we've helped
-			cities and vendors across the United States.
-		</p>
-		<h6>Here's who we've worked with</h6>
-		<v-list color="transparent" class="d-flex flex-wrap">
-			<v-list-item v-for="(company, i) in companies" :key="i">
-				<template v-slot:prepend>
-					<component :is="company.icon" />
-				</template>
-			</v-list-item>
-		</v-list>
-		<blockquote>
-			Curb management can help ensure that curb space is allocated more
-			equitably, providing access to this limited resource to all street users,
-			including our most vulnerable.”
-		</blockquote>
-	</v-sheet>
+	<intro-section />
+	<description-section />
+	<analytics-section />
+	<companies-section />
+	<future-section />
+	<blog-section />
+	<form-section />
 </template>
 
 <script setup>
@@ -84,6 +20,13 @@ import CompanyLogo5 from '../components/icons/companies_logo/CompanyLogo5.vue';
 import CompanyLogo6 from '../components/icons/companies_logo/CompanyLogo6.vue';
 import CompanyLogo7 from '../components/icons/companies_logo/CompanyLogo7.vue';
 import CompanyLogo8 from '../components/icons/companies_logo/CompanyLogo8.vue';
+import IntroSection from '../sections/home/IntroSection.vue';
+import DescriptionSection from '../sections/home/DescriptionSection.vue';
+import AnalyticsSection from '../sections/home/AnalyticsSection.vue';
+import CompaniesSection from '../sections/home/CompaniesSection.vue';
+import FutureSection from '../sections/home/FutureSection.vue';
+import BlogSection from '../sections/home/BlogSection.vue';
+import FormSection from '../sections/home/FormSection.vue';
 
 const options = [
 	{
@@ -127,6 +70,24 @@ const companies = [
 	},
 	{
 		icon: CompanyLogo8,
+	},
+];
+
+const posts = [
+	{
+		img: 'assets/photo-1.jpg',
+		title: '2021 Mid-South Parking and Transportation (MSPTA) Conference',
+		date: 'September 21, 2021',
+	},
+	{
+		img: 'assets/photo-2.jpg',
+		title: '2021 Parking Industry Expo (PIE)',
+		date: 'September 21, 2021',
+	},
+	{
+		img: 'assets/photo-3.jpg',
+		title: '2021 International Parking & Mobility Institute (IPMI) Conference',
+		date: 'September 16, 2021',
 	},
 ];
 </script>
