@@ -122,7 +122,7 @@
   letter-spacing: 0.32px;
 }
 
-.vade-ls-45 {
+.vade-ls-45{
   letter-spacing: 0.45px !important;
 }
 
@@ -159,7 +159,7 @@
 }
 
 .primary-btn-border {
-  border:  var(--btn-border-size) solid var(--primary-btn-border-color);
+  border:  var(--btn-border-size) solid var(--primary-btn-border-color) !important;
 }
 
 .original-btn-text-2 {
@@ -175,7 +175,7 @@
 }
 
 .primary-btn-text {
-  color: var(--primary-btn-text);
+  color: var(--primary-btn-text) !important;
 }
 
 .original-btn-bg-2 {
