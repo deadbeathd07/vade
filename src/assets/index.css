@@ -83,7 +83,7 @@
 }
 
 .vade-lh-18 {
-  line-height: 1.125rem;
+  line-height: 1.125rem !important;
 }
 
 .vade-lh-21 {
