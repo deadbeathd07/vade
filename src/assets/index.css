@@ -241,3 +241,12 @@
 .opacity-40 {
   opacity: 0.4;
 }
+
+.vade-px-26 {
+	padding-right: 104px;
+	padding-left: 104px;
+}
+
+.vade-max-width-450 {
+	max-width: 450px;
+}

@@ -7,7 +7,7 @@
 		>
 			{{ sectionContent.title }}
 		</h3>
-		<p class="primary-text vade-base-text vade-lh-24 max-width-450 vade-pb-14">
+		<p class="primary-text vade-base-text vade-lh-24 max-width-450 mb-14">
 			{{ sectionContent.text }}
 		</p>
 		<v-btn
@@ -56,25 +56,12 @@ const sectionContent = store.state.sections.description;
 	padding-top: 156px;
 }
 
-.vade-pb-14 {
-	padding-bottom: 56px;
-}
-
 .vade-pb-24 {
 	padding-bottom: 96px;
 }
 
-.vade-px-26 {
-	padding-right: 104px;
-	padding-left: 104px;
-}
-
 .vade-mb-36 {
 	margin-bottom: 144px;
-}
-
-.vade-max-width-450 {
-	max-width: 450px;
 }
 
 .vade .v-card-item {
