@@ -52,6 +52,13 @@ const sectionContent = store.state.sections.description;
 </script>
 
 <style>
+.bg-img-camera {
+	background-image: url('../../assets/camera.png') !important;
+	background-position: right 126px !important;
+	background-size: 642px 414px !important;
+	background-repeat: no-repeat !important;
+}
+
 .vade-pt-39 {
 	padding-top: 156px;
 }

@@ -26,13 +26,6 @@ import FormSection from '../sections/home/FormSection.vue';
 	background-repeat: no-repeat !important;
 }
 
-.bg-img-camera {
-	background-image: url('../assets/camera.png') !important;
-	background-position: right 126px !important;
-	background-size: 642px 414px !important;
-	background-repeat: no-repeat !important;
-}
-
 .text-transform-none {
 	text-transform: none !important;
 }
