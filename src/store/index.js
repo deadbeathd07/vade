@@ -35,6 +35,11 @@ const store = createStore({
 						},
 					],
 				},
+				analytics: {
+					title: 'Collect, analyze, and visualize occupancy data',
+					text: 'Visualize demand with dashboards for curb utilization and compliance.',
+					img_path: 'assets/app.png',
+				},
 			},
 			nav: {
 				technology: '/technology',
