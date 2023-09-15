@@ -12,14 +12,14 @@
 		</p>
 		<v-btn
 			variant="outlined"
-			class="vade-base-text vade-lh-18 vade-ls-45 text-transform-none primary-btn-text primary-btn-border"
+			class="vade-base-text vade-lh-18 vade-ls-45 text-transform-none primary-btn-text primary-btn-border vade-mb-36"
 			width="270"
 			height="60"
 			>{{ sectionContent.btn_text }}
 		</v-btn>
 		<v-sheet color="transparent" class="d-flex">
 			<v-card
-				v-for="(option, index) in options"
+				v-for="(option, index) in sectionContent.options"
 				:key="index"
 				:title="option.title"
 				:text="option.text"
@@ -27,7 +27,7 @@
 				color="transparent"
 			>
 				<template v-slot:prepend>
-					<component :is="option.img" />
+					<component :is="option.icon" />
 				</template>
 			</v-card>
 		</v-sheet>
@@ -58,6 +58,10 @@ const sectionContent = store.state.sections.description;
 .vade-px-26 {
 	padding-right: 104px;
 	padding-left: 104px;
+}
+
+.vade-mb-36 {
+	margin-bottom: 144px;
 }
 
 .vade-max-width-450 {
