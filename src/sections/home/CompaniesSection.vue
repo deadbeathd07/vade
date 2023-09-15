@@ -27,8 +27,42 @@
 	</v-sheet>
 </template>
 
-<script>
-export default {};
+<script setup>
+import CompanyLogo1 from '../../components/icons/companies_logo/CompanyLogo1.vue';
+import CompanyLogo2 from '../../components/icons/companies_logo/CompanyLogo2.vue';
+import CompanyLogo3 from '../../components/icons/companies_logo/CompanyLogo3.vue';
+import CompanyLogo4 from '../../components/icons/companies_logo/CompanyLogo4.vue';
+import CompanyLogo5 from '../../components/icons/companies_logo/CompanyLogo5.vue';
+import CompanyLogo6 from '../../components/icons/companies_logo/CompanyLogo6.vue';
+import CompanyLogo7 from '../../components/icons/companies_logo/CompanyLogo7.vue';
+import CompanyLogo8 from '../../components/icons/companies_logo/CompanyLogo8.vue';
+
+const companies = [
+	{
+		icon: CompanyLogo1,
+	},
+	{
+		icon: CompanyLogo2,
+	},
+	{
+		icon: CompanyLogo3,
+	},
+	{
+		icon: CompanyLogo4,
+	},
+	{
+		icon: CompanyLogo5,
+	},
+	{
+		icon: CompanyLogo6,
+	},
+	{
+		icon: CompanyLogo7,
+	},
+	{
+		icon: CompanyLogo8,
+	},
+];
 </script>
 
 <style></style>
