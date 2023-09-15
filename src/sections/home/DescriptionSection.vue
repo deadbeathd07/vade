@@ -15,20 +15,29 @@
 			class="vade-base-text vade-lh-18 vade-ls-45 text-transform-none primary-btn-text primary-btn-border vade-mb-36"
 			width="270"
 			height="60"
-			>{{ sectionContent.btn_text }}
+		>
+			{{ sectionContent.btn_text }}
 		</v-btn>
-		<v-sheet color="transparent" class="d-flex">
+		<v-sheet color="transparent" class="d-flex justify-space-between">
 			<v-card
 				v-for="(option, index) in sectionContent.options"
 				:key="index"
-				:title="option.title"
-				:text="option.text"
 				elevation="0"
 				color="transparent"
+				class="vade"
+				max-width="300"
 			>
 				<template v-slot:prepend>
 					<component :is="option.icon" />
 				</template>
+				<v-card-title
+					class="primary-title vade-h4 vade-lh-28 mt-7 mb-5 py-0 px-0"
+				>
+					{{ option.title }}
+				</v-card-title>
+				<v-card-text class="primary-text vade-base-text vade-lh-24 px-0">
+					{{ option.text }}
+				</v-card-text>
 			</v-card>
 		</v-sheet>
 	</v-sheet>
@@ -66,5 +75,9 @@ const sectionContent = store.state.sections.description;
 
 .vade-max-width-450 {
 	max-width: 450px;
+}
+
+.vade .v-card-item {
+	padding: 0;
 }
 </style>
