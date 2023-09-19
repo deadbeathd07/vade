@@ -10,7 +10,9 @@
 				{{ sectionContent.text }}
 			</p>
 			<div>
-				<p class="vade-base-text vade-lh-28 original-text vade-max-width-200">
+				<p
+					class="vade-base-text vade-lh-28 original-text vade-max-width-200 mb-8"
+				>
 					{{ sectionContent.subtitle }}
 				</p>
 				<v-btn
