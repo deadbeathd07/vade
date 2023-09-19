@@ -1,7 +1,7 @@
 <template>
 	<svg
-		width="138"
-		height="138"
+		:width="props.width"
+		:height="props.width"
 		viewBox="0 0 138 138"
 		fill="none"
 		xmlns="http://www.w3.org/2000/svg"
@@ -26,3 +26,11 @@
 		</defs>
 	</svg>
 </template>
+<script setup>
+const props = defineProps({
+	width: {
+		type: [String, Number],
+		default: 138,
+	},
+});
+</script>
