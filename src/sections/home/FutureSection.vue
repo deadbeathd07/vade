@@ -1,11 +1,21 @@
 <template>
-	<v-sheet>
-		<h2>{{ sectionContent.title }}</h2>
-		<p>
-			{{ sectionContent.text }}
-		</p>
-		<p>{{ sectionContent.subtitle }}</p>
-		<v-btn>{{ sectionContent.btn_text }}</v-btn>
+	<v-sheet class="secondary-bg vade-bg-future vade-pt-14 vade-pb-19">
+		<h2
+			class="original-title vade-h2 vade-lh-101 vade-ls-384 font-weight-regular vade-max-width-500"
+		>
+			{{ sectionContent.title }}
+		</h2>
+		<div class="d-flex justify-space-between align-end">
+			<p class="vade-base-text vade-lh-24 original-text vade-max-width-350">
+				{{ sectionContent.text }}
+			</p>
+			<div>
+				<p class="vade-base-text vade-lh-28 original-text vade-max-width-200">
+					{{ sectionContent.subtitle }}
+				</p>
+				<v-btn>{{ sectionContent.btn_text }}</v-btn>
+			</div>
+		</div>
 	</v-sheet>
 </template>
 
@@ -17,4 +27,31 @@ const store = useStore();
 const sectionContent = store.state.sections.future;
 </script>
 
-<style></style>
+<style>
+.vade-bg-future {
+	background-image: url('../../assets/bg-2.png') !important;
+	background-position: center !important;
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+}
+
+.vade-pt-14 {
+	padding-top: 56px;
+}
+
+.vade-pb-19 {
+	padding-bottom: 76px;
+}
+
+.vade-max-width-500 {
+	max-width: 500px;
+}
+
+.vade-max-width-350 {
+	max-width: 350px;
+}
+
+.vade-max-width-200 {
+	max-width: 200px;
+}
+</style>

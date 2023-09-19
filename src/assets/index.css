@@ -231,7 +231,7 @@
 }
 
 .secondary-bg {
-  background-color: var(--secondary-bg);
+  background-color: var(--secondary-bg) !important;
 }
 
 .original-bg {
