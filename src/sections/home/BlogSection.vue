@@ -24,7 +24,14 @@
 				</v-col>
 			</v-row>
 		</v-container>
-		<v-btn>Read all posts</v-btn>
+		<v-btn
+			variant="outlined"
+			class="vade-base-text vade-lh-18 vade-ls-45 text-transform-none primary-btn-text primary-btn-border vade-mb-36"
+			width="166"
+			height="60"
+		>
+			{{ sectionContent.btn_text }}
+		</v-btn>
 	</v-sheet>
 </template>
 

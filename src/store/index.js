@@ -77,6 +77,7 @@ const store = createStore({
 							date: 'September 16, 2021',
 						},
 					],
+					btn_text: 'Read all posts',
 				},
 			},
 			nav: {
