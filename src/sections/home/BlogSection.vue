@@ -26,7 +26,7 @@
 		</v-container>
 		<v-btn
 			variant="outlined"
-			class="vade-base-text vade-lh-18 vade-ls-45 text-transform-none primary-btn-text primary-btn-border vade-mb-36"
+			class="vade-base-text vade-lh-18 vade-ls-45 text-transform-none primary-btn-text primary-btn-border"
 			width="166"
 			height="60"
 		>
