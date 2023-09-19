@@ -39,6 +39,16 @@ const store = createStore({
 					title: 'Collect, analyze, and visualize occupancy data',
 					text: 'Visualize demand with dashboards for curb utilization and compliance.',
 				},
+				companies: {
+					title: 'Trusted by leaders in urban transportation',
+					text: "Transparency and quality are the basis of our work, and we've helped cities and vendors across the United States.",
+					subtitle: "Here's who we've worked with",
+					quote: {
+						text: 'Curb management can help ensure that curb space is allocated more equitably, providing access to this limited resource to all street users, including our most vulnerable.',
+						location: 'San Francisco',
+						company: 'Municipal Transportation Agency',
+					},
+				},
 			},
 			nav: {
 				technology: '/technology',

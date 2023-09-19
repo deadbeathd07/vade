@@ -3,14 +3,13 @@
 		<h3
 			class="primary-title vade-h3 vade-lh-50 vade-ls-132 font-weight-regular vade-max-width-450 pb-6"
 		>
-			Trusted by leaders in urban transportation
+			{{ sectionContent.title }}
 		</h3>
 		<p class="primary-text vade-base-text vade-lh-24 max-width-450 vade-mb-24">
-			Transparency and quality are the basis of our work, and we've helped
-			cities and vendors across the United States.
+			{{ sectionContent.text }}
 		</p>
 		<h4 class="vade-h4 vade-lh-28 primary-title font-weight-regular mb-9">
-			Here's who we've worked with
+			{{ sectionContent.subtitle }}
 		</h4>
 		<v-container class="d-flex flex-wrap vade-px-18 vade-mb-41">
 			<v-row>
@@ -28,18 +27,16 @@
 			<q
 				class="original-text vade-quote-text vade-lh-46 vade-ls-32 flex-0-1 vade-mr-19 vade-max-width-600"
 			>
-				Curb management can help ensure that curb space is allocated more
-				equitably, providing access to this limited resource to all street
-				users, including our most vulnerable.
+				{{ sectionContent.quote.text }}
 			</q>
 			<figcaption class="flex-0-0 d-flex align-center justify-center">
 				<company-logo-9 />
 				<div class="ml-5 vade-max-width-170">
 					<h6 class="vade-h4 primary-title vade-lh-28 font-weight-regular">
-						San Francisco
+						{{ sectionContent.quote.location }}
 					</h6>
 					<p class="vade-base-text vade-lh-24 primary-text">
-						Municipal Transportation Agency
+						{{ sectionContent.quote.company }}
 					</p>
 				</div>
 			</figcaption>
@@ -48,6 +45,7 @@
 </template>
 
 <script setup>
+import { useStore } from 'vuex';
 import CompanyLogo1 from '../../components/icons/companies_logo/CompanyLogo1.vue';
 import CompanyLogo2 from '../../components/icons/companies_logo/CompanyLogo2.vue';
 import CompanyLogo3 from '../../components/icons/companies_logo/CompanyLogo3.vue';
@@ -84,6 +82,10 @@ const companies = [
 		icon: CompanyLogo8,
 	},
 ];
+
+const store = useStore();
+
+const sectionContent = store.state.sections.companies;
 </script>
 
 <style>
