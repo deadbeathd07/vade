@@ -1,18 +1,20 @@
 <template>
 	<v-sheet>
-		<h2>Power up the future of cities</h2>
+		<h2>{{ sectionContent.title }}</h2>
 		<p>
-			We're building a new paradigm of urban mobility that understands and
-			adapts to the world around it. We empower cities with dynamic tools to
-			make streets safer, less congested, and more productive.
+			{{ sectionContent.text }}
 		</p>
-		<p>Read more on how we’re improving transportation on our Impact page.</p>
-		<v-btn>Social impact</v-btn>
+		<p>{{ sectionContent.subtitle }}</p>
+		<v-btn>{{ sectionContent.btn_text }}</v-btn>
 	</v-sheet>
 </template>
 
-<script>
-export default {};
+<script setup>
+import { useStore } from 'vuex';
+
+const store = useStore();
+
+const sectionContent = store.state.sections.future;
 </script>
 
 <style></style>

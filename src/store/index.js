@@ -49,6 +49,13 @@ const store = createStore({
 						company: 'Municipal Transportation Agency',
 					},
 				},
+				future: {
+					title: 'Power up the future of cities',
+					text: "We're building a new paradigm of urban mobility that understands and adapts to the world around it. We empower cities with dynamic tools to make streets safer, less congested, and more productive.",
+					subtitle:
+						'Read more on how we’re improving transportation on our Impact page.',
+					btn_text: 'Social impact',
+				},
 			},
 			nav: {
 				technology: '/technology',
