@@ -1,7 +1,7 @@
 <template>
 	<v-sheet class="secondary-bg vade-bg-future vade-pt-14 vade-pb-19">
 		<h2
-			class="original-title vade-h2 vade-lh-101 vade-ls-384 font-weight-regular vade-max-width-500"
+			class="original-title vade-h2 vade-lh-101 vade-ls-384 font-weight-regular vade-max-width-500 vade-mb-33"
 		>
 			{{ sectionContent.title }}
 		</h2>
@@ -13,7 +13,15 @@
 				<p class="vade-base-text vade-lh-28 original-text vade-max-width-200">
 					{{ sectionContent.subtitle }}
 				</p>
-				<v-btn>{{ sectionContent.btn_text }}</v-btn>
+				<v-btn
+					width="195"
+					height="68"
+					class="vade-base-text vade-lh-24 text-transform-none vade-ls-45"
+					color="#4e66ff"
+					elevation="0"
+				>
+					{{ sectionContent.btn_text }}
+				</v-btn>
 			</div>
 		</div>
 	</v-sheet>
@@ -53,5 +61,9 @@ const sectionContent = store.state.sections.future;
 
 .vade-max-width-200 {
 	max-width: 200px;
+}
+
+.vade-mb-33 {
+	margin-bottom: 132px;
 }
 </style>
