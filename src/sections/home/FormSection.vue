@@ -18,12 +18,23 @@
 					<v-form>
 						<v-text-field
 							v-for="(field, i) in sectionContent.fields"
+							density="compact"
+							variant="solo"
+							single-line
+							hide-details
 							:key="i"
 							:label="field"
+							class="vade vade-mb-7"
 						/>
-						<v-textarea :label="sectionContent.area" />
+						<v-textarea
+							:label="sectionContent.area"
+							density="compact"
+							variant="solo"
+							single-line
+							hide-details
+							class="vade vade-mb-7"
+						/>
 						<v-btn
-							elevation="0"
 							color="#393737"
 							class="vade-form-text text-transform-none secondary-btn-text"
 							width="184"
@@ -83,5 +94,13 @@ const sectionContent = store.state.sections.form;
 }
 .vade-content {
 	z-index: 40;
+}
+
+.vade .v-field--variant-solo {
+	box-shadow: none;
+}
+
+.vade-mb-7 {
+	margin-bottom: 28px !important;
 }
 </style>
