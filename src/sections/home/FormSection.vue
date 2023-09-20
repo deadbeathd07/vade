@@ -15,28 +15,39 @@
 					</div>
 				</v-col>
 				<v-col cols="6">
-					<v-form>
-						<v-text-field
-							v-for="(field, i) in sectionContent.fields"
-							density="compact"
-							variant="solo"
-							single-line
-							hide-details
-							:key="i"
-							:label="field"
-							class="vade vade-mb-7"
-						/>
-						<v-textarea
-							:label="sectionContent.area"
-							density="compact"
-							variant="solo"
-							single-line
-							hide-details
-							class="vade vade-mb-7"
-						/>
+					<v-form class="py-6">
+						<v-container>
+							<v-row>
+								<v-col
+									v-for="(field, i) in sectionContent.fields"
+									:cols="i == 2 || i == 3 ? 6 : 12"
+									:key="i"
+								>
+									<v-text-field
+										density="compact"
+										variant="solo"
+										single-line
+										hide-details
+										:label="field"
+										class="vade mb-5"
+									/>
+								</v-col>
+								<v-col cols="12">
+									<v-textarea
+										:label="sectionContent.area"
+										density="compact"
+										variant="solo"
+										single-line
+										hide-details
+										class="vade vade-mb-7"
+									/>
+								</v-col>
+							</v-row>
+						</v-container>
 						<v-btn
 							color="#393737"
-							class="vade-form-text text-transform-none secondary-btn-text"
+							elevation="0"
+							class="vade-form-text text-transform-none secondary-btn-text ml-4"
 							width="184"
 							height="68"
 						>
@@ -98,9 +109,5 @@ const sectionContent = store.state.sections.form;
 
 .vade .v-field--variant-solo {
 	box-shadow: none;
-}
-
-.vade-mb-7 {
-	margin-bottom: 28px !important;
 }
 </style>
