@@ -67,7 +67,7 @@
 }
 
 .vade-form-text {
-  font-size: 1.5rem;
+  font-size: 1.5rem !important;
 }
 
 .vade-alert-text {
@@ -112,10 +112,6 @@
 
 .vade-lh-101 {
   line-height: 6.312rem;
-}
-
-.vade-lh-115 {
-  line-height: 7.187rem;
 }
 
 .vade-ls-32 {
