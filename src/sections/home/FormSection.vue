@@ -7,22 +7,30 @@
 						class="pt-12 pb-15 px-14 vade-content d-flex flex-column justify-space-between align-center"
 					>
 						<h3 class="vade-h3 vade-lh-50 vade-ls-132 primary-title">
-							Let’s find out how your curbs are used.
+							{{ sectionContent.title }}
 						</h3>
 						<p class="vade-h4 vade-lh-21 vade-ls-180">
-							Connect with Vade and see what real-time curb data can do for your
-							city.
+							{{ sectionContent.text }}
 						</p>
 					</div>
 				</v-col>
 				<v-col cols="6">
 					<v-form>
-						<v-text-field label="name" />
-						<v-text-field label="email" />
-						<v-text-field label="company" />
-						<v-text-field label="position" />
-						<v-textarea label="message" />
-						<v-btn>Get in touch</v-btn>
+						<v-text-field
+							v-for="(field, i) in sectionContent.fields"
+							:key="i"
+							:label="field"
+						/>
+						<v-textarea :label="sectionContent.area" />
+						<v-btn
+							elevation="0"
+							color="#393737"
+							class="vade-form-text text-transform-none secondary-btn-text"
+							width="184"
+							height="68"
+						>
+							{{ sectionContent.btn_text }}
+						</v-btn>
 					</v-form>
 				</v-col>
 			</v-row>
@@ -30,7 +38,13 @@
 	</v-sheet>
 </template>
 
-<script setup></script>
+<script setup>
+import { useStore } from 'vuex';
+
+const store = useStore();
+
+const sectionContent = store.state.sections.form;
+</script>
 
 <style>
 .vade-py-27 {
