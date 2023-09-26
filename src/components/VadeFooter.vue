@@ -21,6 +21,7 @@
 				>
 					team@vade.ai
 				</a>
+				<social-networks :list="socialNetworksList" />
 			</address>
 		</v-sheet>
 		<v-divider />
@@ -29,11 +30,14 @@
 
 <script setup>
 import VadeNav from './VadeNav.vue';
+import SocialNetworks from './SocialNetworks.vue';
 import { useStore } from 'vuex';
 
 const store = useStore();
 
 const nav = store.state.nav;
+
+const socialNetworksList = ['facebook', 'instagram', 'twitter', 'linkedin'];
 </script>
 
 <style>
