@@ -246,3 +246,9 @@
 .vade-max-width-450 {
 	max-width: 450px;
 }
+
+@media (min-width: 960px) {
+  .v-container {
+    max-width: 100% !important;
+  }
+}
