@@ -1,6 +1,6 @@
 <template>
 	<v-sheet color="#ddebff" class="vade-py-27">
-		<v-container>
+		<v-container class="ma-0">
 			<v-row>
 				<v-col cols="6" class="vade-corners">
 					<div
@@ -39,7 +39,7 @@
 										variant="solo"
 										single-line
 										hide-details
-										class="vade vade-mb-7"
+										class="vade mb-8"
 									/>
 								</v-col>
 							</v-row>
