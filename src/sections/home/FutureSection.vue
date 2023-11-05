@@ -30,11 +30,13 @@
 </template>
 
 <script setup>
-import { useStore } from 'vuex';
-
-const store = useStore();
-
-const sectionContent = store.state.sections.future;
+const sectionContent = {
+	title: 'Power up the future of cities',
+	text: "We're building a new paradigm of urban mobility that understands and adapts to the world around it. We empower cities with dynamic tools to make streets safer, less congested, and more productive.",
+	subtitle:
+		'Read more on how we’re improving transportation on our Impact page.',
+	btn_text: 'Social impact',
+};
 </script>
 
 <style>

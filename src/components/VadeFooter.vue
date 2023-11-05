@@ -44,11 +44,14 @@
 <script setup>
 import VadeNav from './VadeNav.vue';
 import SocialNetworks from './SocialNetworks.vue';
-import { useStore } from 'vuex';
 
-const store = useStore();
-
-const nav = store.state.nav;
+const nav = {
+	technology: '/technology',
+	'about us': '/about-us',
+	impact: '/impact',
+	portfolio: '/portfolio',
+	blog: '/blog',
+};
 
 const socialNetworksList = ['facebook', 'instagram', 'twitter', 'linkedin'];
 const termsOfUse = ['privacy policy', 'terms of use'];

@@ -44,11 +44,32 @@
 </template>
 
 <script setup>
-import { useStore } from 'vuex';
+import SolarBatteryIcon from '../../components/icons/SolarBatteryIcon.vue';
+import DatabaseIcon from '../../components/icons/DatabaseIcon.vue';
+import ChartIcon from '../../components/icons/ChartIcon.vue';
 
-const store = useStore();
-
-const sectionContent = store.state.sections.description;
+const sectionContent = {
+	title: 'Get to know the curb better',
+	text: 'Vade replaces legacy parking infrastructure with wireless cameras, computer vision, and granular analytics. We make it easy for cities to monitor and manage curb space in real-time.',
+	btn_text: 'More about our technology',
+	options: [
+		{
+			icon: SolarBatteryIcon,
+			title: 'Fully wireless hardware',
+			text: 'We provide solar and cellular cameras that work anywhere, operate 24/7, and take under 10 minutes to install.',
+		},
+		{
+			icon: DatabaseIcon,
+			title: 'Real-time data',
+			text: 'Measure availability and compliance in real-time with our powerful and accurate computer vision pipeline.',
+		},
+		{
+			icon: ChartIcon,
+			title: 'Full service subscription',
+			text: 'Full service subscription. One subscription for the cameras, installation, maintenance, implementation, software, and support.',
+		},
+	],
+};
 </script>
 
 <style>

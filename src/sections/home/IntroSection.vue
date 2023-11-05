@@ -19,10 +19,11 @@
 </template>
 
 <script setup>
-import { useStore } from 'vuex';
-
-const store = useStore();
-const sectionContent = store.state.sections.intro;
+const sectionContent = {
+	title: 'Connecting the curb to new insights',
+	text: 'Real-time curb data for smart cities. Measure occupancy, analyze demand, and manage curb space with the right tools.',
+	btn_text: 'Book a demo',
+};
 </script>
 
 <style>

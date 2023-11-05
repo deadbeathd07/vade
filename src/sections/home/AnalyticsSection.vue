@@ -13,11 +13,10 @@
 </template>
 
 <script setup>
-import { useStore } from 'vuex';
-
-const store = useStore();
-
-const sectionContent = store.state.sections.analytics;
+const sectionContent = {
+	title: 'Collect, analyze, and visualize occupancy data',
+	text: 'Visualize demand with dashboards for curb utilization and compliance.',
+};
 </script>
 
 <style>

@@ -61,11 +61,13 @@
 </template>
 
 <script setup>
-import { useStore } from 'vuex';
-
-const store = useStore();
-
-const sectionContent = store.state.sections.form;
+const sectionContent = {
+	title: 'Let’s find out how your curbs are used.',
+	text: 'Connect with Vade and see what real-time curb data can do for your city.',
+	fields: ['name', 'email', 'company', 'position'],
+	area: 'message',
+	btn_text: 'Get in touch',
+};
 </script>
 
 <style>

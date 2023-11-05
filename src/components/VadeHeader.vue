@@ -23,12 +23,15 @@
 </template>
 
 <script setup>
-import { useStore } from 'vuex';
 import VadeNav from './VadeNav.vue';
 
-const store = useStore();
-
-const nav = store.state.nav;
+const nav = {
+	technology: '/technology',
+	'about us': '/about-us',
+	impact: '/impact',
+	portfolio: '/portfolio',
+	blog: '/blog',
+};
 </script>
 
 <style>
