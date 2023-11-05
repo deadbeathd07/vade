@@ -3,45 +3,16 @@
 
 
 :root {
-  --palette-1-1: #393737;
-  --palette-1-2: #70748c;
-  --palette-1-3: #ffea31;
-  --palette-1-4: #5d6073;
-  --palette-1-5: #4e66ff;
-  --palette-1-6: #ffffff;
-  --palette-1-7: #f0f8ff;
-  --palette-1-8: #b5b7c7;
-  --palette-1-9: #ddebff;
-  --palette-1-10: #f9fbfd;
-  --palette-1-11: transparent;
-
-  --primary-bg: var(--palette-1-10);
-  --secondary-bg: var(--palette-1-7);
-  --original-bg: var(--palette-1-9);
-
-  --primary-nav-text: var(--palette-1-1);
-
-  --primary-title: var(--palette-1-1);
-  --original-title: var(--palette-1-5);
-
-  --primary-text: var(--palette-1-2);
-  --secondary-text: var(--palette-1-1);
-  --info-text: var(--palette-1-8);
-  --original-text: var(--palette-1-5);
-  --notification-text: var(--palette-1-5);
-
-  --primary-btn-bg: var(--palette-1-11);
-  --secondary-btn-bg: var(--palette-1-1);
-  --original-btn-bg-1: var(--palette-1-3);
-  --original-btn-bg-2: var(--palette-1-5);
-
-  --primary-btn-text: var(--palette-1-4);
-  --secondary-btn-text: var(--palette-1-6);
-  --original-btn-text-1: var(--palette-1-1);
-  --original-btn-text-2: var(--palette-1-5);
-
-  --primary-btn-border-color: var(--palette-1-2);
-  --original-btn-border-color: var(--palette-1-1);
+  --palette-main-dark: #393737;
+  --palette-main-darken-text: #5d6073;
+  --palette-main-text: #70748c;
+  --palette-main-lighten-text: #b5b7c7;
+  --palette-main-contrast: #ffea31;
+  --palette-alter-contrast: #4e66ff;
+  --palette-main-darken-bg: #ddebff;
+  --palette-main-bg: #f0f8ff;
+  --palette-main-lighten-bg: #f9fbfd;
+  --palette-main-light: #ffffff;
 
   --btn-border-size: 1px;
 }
@@ -147,91 +118,87 @@
 }
 
 .vade-bg-primary {
- background-color: var(--primary-bg) !important; 
+ background-color: var(--palette-main-lighten-bg) !important; 
 }
 
 .original-btn-border {
-  border:  var(--btn-border-size) solid var(--original-btn-border-color);
+  border:  var(--btn-border-size) solid var(--palette-main-dark);
 }
 
 .primary-btn-border {
-  border:  var(--btn-border-size) solid var(--primary-btn-border-color) !important;
+  border:  var(--btn-border-size) solid var(--palette-main-text) !important;
 }
 
 .original-btn-text-2 {
-  color: var(--original-btn-text-2);
+  color: var(--palette-alter-contrast);
 }
 
 .original-btn-text-1 {
-  color: var(--original-btn-text-1);
+  color: var(--palette-main-dark);
 }
 
 .secondary-btn-text {
-  color: var(--secondary-btn-text);
+  color: var(--palette-main-light);
 }
 
 .primary-btn-text {
-  color: var(--primary-btn-text) !important;
+  color: var(--palette-main-darken-text) !important;
 }
 
 .original-btn-bg-2 {
-  background-color: var(--original-btn-bg-2);
+  background-color: var(--palette-alter-contrast);
 }
 
 .original-btn-bg-1 {
-  background-color: var(--original-btn-bg-1);
+  background-color: var(--palette-main-contrast);
 }
 
 .secondary-btn-bg {
-  background-color: var(--secondary-btn-bg);
-}
-
-.primary-btn-bg {
-  background-color: var(--primary-btn-bg);
+  background-color: var(--palette-main-dark);
 }
 
 .notification-text {
-  color: var(--notification-text);
+  color: var(--palette-alter-contrast);
 }
 
 .original-text {
-  color: var(--original-text);
+  color: var(--palette-alter-contrast);
 }
 
 .info-text {
-  color: var(--info-text) !important;
+  color: var(--palette-main-lighten-text) !important;
 }
 
 .secondary-text {
-  color: var(--secondary-text);
+  color: var(--palette-main-dark);
 }
 
 .primary-text {
-  color: var(--primary-text);
+  color: var(--palette-main-text);
 }
 
 .original-title {
-  color: var(--original-title);
+  color: var(--palette-alter-contrast);
 }
 
 .primary-title {
-  color: var(--primary-title);
+  color: var(--palette-main-dark);
 }
 
 .primary-nav-text {
-  color: var(--primary-nav-text);
+  color: var(--palette-main-dark);
 }
 
 .primary-bg {
-  background-color: var(--primary-bg);
+  background-color: var(--palette-main-lighten-bg);
 }
 
 .secondary-bg {
-  background-color: var(--secondary-bg) !important;
+  background-color: var(--palette-main-bg) !important;
 }
 
 .original-bg {
-  background-color: var(--original-bg);
+  background-color: var(--palette-main-darken-bg);
 }
 
 .opacity-40 {
