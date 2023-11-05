@@ -33,7 +33,9 @@
 		<v-divider class="w-100" />
 		<v-list class="w-100 d-flex pa-0 ma-0 vade-info-text">
 			<v-list-item v-for="(item, i) in termsOfUse" :key="i" class="pa-0 mr-3">
-				<a href="#" class="text-decoration-none info-text">{{ item }}</a>
+				<a href="#" class="text-decoration-none info-text" @click.prevent>{{
+					item
+				}}</a>
 			</v-list-item>
 		</v-list>
 	</v-footer>
