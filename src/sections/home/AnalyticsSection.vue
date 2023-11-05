@@ -1,5 +1,5 @@
 <template>
-	<v-sheet class="vade-bg-3 my-15 vade-px-26">
+	<v-sheet class="vade-bg-3 my-15 vade-px-26 vade-max-width mx-auto">
 		<h3
 			class="primary-title vade-h3 vade-lh-50 vade-ls-132 font-weight-regular vade-max-width-450 pb-6"
 		>

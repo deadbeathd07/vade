@@ -5,7 +5,7 @@ import HomeView from './views/HomeView.vue';
 </script>
 
 <template>
-	<v-app class="vade-max-width mx-auto pb-8 px-4">
+	<v-app class="mx-auto pb-8 px-4">
 		<vade-header />
 		<v-main class="pa-0">
 			<home-view />

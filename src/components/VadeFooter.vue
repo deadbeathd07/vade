@@ -1,6 +1,6 @@
 <template>
 	<v-footer class="d-flex flex-column pa-0 pt-13 pb-5">
-		<v-sheet class="w-100 d-flex">
+		<v-sheet class="w-100 d-flex vade-max-width mx-auto">
 			<v-img
 				:width="44"
 				:height="48"
@@ -29,9 +29,13 @@
 				</p>
 			</address>
 		</v-sheet>
-		<p class="w-100 vade-info-text info-text mb-4">© 2021 VADE Group Inc.</p>
-		<v-divider class="w-100" />
-		<v-list class="w-100 d-flex pa-0 ma-0 vade-info-text">
+		<p class="w-100 vade-info-text info-text mb-4 vade-max-width mx-auto">
+			© 2021 VADE Group Inc.
+		</p>
+		<v-divider class="w-100 vade-max-width mx-auto" />
+		<v-list
+			class="w-100 d-flex pa-0 ma-0 vade-info-text vade-max-width mx-auto"
+		>
 			<v-list-item v-for="(item, i) in termsOfUse" :key="i" class="pa-0 mr-3">
 				<a href="#" class="text-decoration-none info-text" @click.prevent>{{
 					item

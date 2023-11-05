@@ -1,5 +1,8 @@
 <template>
-	<v-sheet class="secondary-bg vade-bg-future vade-pt-14 vade-pb-19">
+	<v-sheet
+		color="transparent"
+		class="vade-bg-future vade-pt-14 vade-pb-19 vade-max-width mx-auto"
+	>
 		<h2
 			class="original-title vade-h2 vade-lh-101 vade-ls-384 font-weight-regular vade-max-width-500 vade-mb-33"
 		>

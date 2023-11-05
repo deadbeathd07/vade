@@ -1,6 +1,7 @@
 <template>
 	<v-sheet
-		class="vade-bg-primary bg-img-camera vade-pt-39 vade-px-26 vade-pb-24"
+		color="transparent"
+		class="bg-img-camera vade-pt-39 vade-px-26 vade-pb-24 vade-max-width mx-auto"
 	>
 		<h3
 			class="primary-title vade-h3 vade-lh-50 vade-ls-132 font-weight-regular vade-max-width-450 pb-6"

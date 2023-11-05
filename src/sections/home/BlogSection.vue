@@ -1,5 +1,8 @@
 <template>
-	<v-sheet class="vade-py-25 vade-px-26" color="#f9fbfd">
+	<v-sheet
+		class="vade-py-25 vade-px-26 vade-max-width mx-auto"
+		color="transparent"
+	>
 		<h5 class="primary-title vade-h4 vade-lh-28 mb-6 font-weight-regular">
 			{{ sectionContent.title }}
 		</h5>

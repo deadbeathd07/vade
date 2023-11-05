@@ -1,5 +1,5 @@
 <template>
-	<v-sheet class="bg-img-1 vade-pt-31 vade-pb-25">
+	<v-sheet class="bg-img-1 vade-pt-31 vade-pb-25 vade-max-width mx-auto">
 		<h1 class="vade-h1 text-regular vade-lh-115 vade-ls-696 vade-mb-30">
 			{{ sectionContent.title }}
 		</h1>

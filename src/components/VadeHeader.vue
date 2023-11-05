@@ -2,7 +2,7 @@
 	<v-app-bar
 		:elevation="0"
 		scroll-behavior="hide"
-		class="vade vade-max-width pt-10"
+		class="vade pt-10"
 		color="transparent"
 		absolute
 	>
@@ -41,5 +41,10 @@ const nav = {
 
 .vade .v-toolbar__append {
 	margin-inline-end: 0 !important;
+}
+
+.vade .v-toolbar__content {
+	max-width: var(--max-width);
+	margin: 0 auto;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-	<v-sheet color="#ddebff" class="vade-py-27">
+	<v-sheet color="transparent" class="vade-py-27 vade-max-width mx-auto">
 		<v-container class="ma-0">
 			<v-row>
 				<v-col cols="6" class="vade-corners">

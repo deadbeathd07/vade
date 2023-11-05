@@ -1,11 +1,11 @@
 <template>
 	<intro-section />
-	<description-section />
+	<v-sheet class="vade-bg-primary"><description-section /></v-sheet>
 	<analytics-section />
 	<companies-section />
-	<future-section />
-	<blog-section />
-	<form-section />
+	<v-sheet class="secondary-bg"><future-section /></v-sheet>
+	<v-sheet class="bg-third"><blog-section /></v-sheet>
+	<v-sheet class="bg-fourth"><form-section /></v-sheet>
 </template>
 
 <script setup>
@@ -40,5 +40,12 @@ import FormSection from '../sections/home/FormSection.vue';
 
 .max-width-450 {
 	max-width: 450px;
+}
+
+.bg-third {
+	background-color: var(--palette-main-lighten-bg) !important;
+}
+.bg-fourth {
+	background-color: var(--palette-main-darken-bg) !important;
 }
 </style>
