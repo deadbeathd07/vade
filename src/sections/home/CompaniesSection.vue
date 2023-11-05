@@ -45,7 +45,6 @@
 </template>
 
 <script setup>
-import { useStore } from 'vuex';
 import CompanyLogo1 from '../../components/icons/companies_logo/CompanyLogo1.vue';
 import CompanyLogo2 from '../../components/icons/companies_logo/CompanyLogo2.vue';
 import CompanyLogo3 from '../../components/icons/companies_logo/CompanyLogo3.vue';
