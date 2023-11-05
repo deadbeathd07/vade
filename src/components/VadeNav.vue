@@ -10,7 +10,7 @@
 			v-for="(value, name, index) in props.nav"
 			:key="index"
 			:class="isHorizontal && 'mr-11'"
-			@click="goLink(value)"
+			@click.prevent
 		>
 			<v-list-item-title
 				v-text="name"
@@ -24,10 +24,6 @@
 </template>
 
 <script setup>
-import { useRouter } from 'vue-router';
-
-const router = useRouter();
-
 const props = defineProps({
 	nav: Object,
 	isHorizontal: Boolean,
@@ -38,10 +34,6 @@ const horizontalTextClasses = ['vade-base-text', 'vade-lh-24', 'vade-ls-90'];
 
 const verticalMainClasses = ['flex-column', 'bg-transparent'];
 const verticalTextClasses = ['vade-base-text', 'vade-lh-18'];
-
-function goLink(path) {
-	return router.push(path);
-}
 </script>
 
 <style></style>

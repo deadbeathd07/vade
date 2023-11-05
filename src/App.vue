@@ -1,14 +1,14 @@
 <script setup>
 import VadeHeader from './components/VadeHeader.vue';
 import VadeFooter from './components/VadeFooter.vue';
-import { RouterView } from 'vue-router';
+import HomeView from './views/HomeView.vue';
 </script>
 
 <template>
 	<v-app class="vade-max-width mx-auto pb-8 px-4">
 		<vade-header />
 		<v-main class="pa-0">
-			<router-view />
+			<home-view />
 		</v-main>
 		<vade-footer />
 	</v-app>
